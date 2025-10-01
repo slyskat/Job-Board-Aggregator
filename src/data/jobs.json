@@ -1,0 +1,860 @@
+[
+  {
+    "id": 1001,
+    "title": "Junior Front-End Developer",
+    "company": "Startup Hub",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 60000,
+      "max": 75000
+    },
+    "experienceLevel": "Entry-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "description": "Seeking a passionate developer for our core platform UI.",
+    "datePosted": "2025-09-29T10:00:00Z"
+  },
+  {
+    "id": 1002,
+    "title": "React UI Intern",
+    "company": "Future Corp",
+    "location": "San Francisco, CA",
+    "salaryRange": {
+      "min": 50000
+    },
+    "experienceLevel": "Entry-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "Work closely with our senior team on component library design.",
+    "datePosted": "2025-09-28T15:30:00Z"
+  },
+  {
+    "id": 1003,
+    "title": "Front-End Engineer, Core Product",
+    "company": "Global Fintech",
+    "location": "New York, NY",
+    "salaryRange": {
+      "min": 110000,
+      "max": 140000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "GraphQL"
+    ],
+    "description": "A high-impact role driving features for millions of users.",
+    "datePosted": "2025-09-25T08:00:00Z"
+  },
+  {
+    "id": 1004,
+    "title": "Senior Front-End Specialist",
+    "company": "HealthTech Systems",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 130000,
+      "max": 160000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "CI/CD"
+    ],
+    "description": "Architect scalable solutions in a regulated environment.",
+    "datePosted": "2025-09-27T12:00:00Z"
+  },
+  {
+    "id": 1005,
+    "title": "UX-Focused React Developer",
+    "company": "Agency 360",
+    "location": "Chicago, IL",
+    "salaryRange": {
+      "min": 95000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "Figma",
+      "SASS"
+    ],
+    "description": "Collaborate with design team to build pixel-perfect UIs.",
+    "datePosted": "2025-09-20T11:00:00Z"
+  },
+  {
+    "id": 1006,
+    "title": "Principal Front-End Architect",
+    "company": "Enterprise Cloud",
+    "location": "San Jose, CA",
+    "salaryRange": {
+      "min": 180000,
+      "max": 250000
+    },
+    "experienceLevel": "Senior",
+    "requiredTech": [
+      "React",
+      "TypeScript",
+      "Micro-Frontends",
+      "Performance Tuning"
+    ],
+    "description": "Lead architectural decisions and mentor junior engineers.",
+    "datePosted": "2025-09-18T09:00:00Z"
+  },
+  {
+    "id": 1007,
+    "title": "Remote React Native Engineer",
+    "company": "Mobile Solutions",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 140000,
+      "max": 175000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "description": "Build cross-platform mobile applications for our clients.",
+    "datePosted": "2025-09-29T07:00:00Z"
+  },
+  {
+    "id": 1008,
+    "title": "Full Stack Developer",
+    "company": "Legacy Systems",
+    "location": "Seattle, WA",
+    "salaryRange": {
+      "min": 120000,
+      "max": 150000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "Java",
+      "SQL"
+    ],
+    "description": null,
+    "datePosted": "2025-09-26T14:00:00Z"
+  },
+  {
+    "id": 1009,
+    "title": "Front-End Developer",
+    "company": "Local Agency",
+    "location": "Remote",
+    "experienceLevel": "Entry-Level",
+    "requiredTech": [
+      "JavaScript",
+      "SASS",
+      "HTML"
+    ],
+    "description": "Collaborate on small business websites.",
+    "datePosted": "2025-09-24T16:00:00Z"
+  },
+  {
+    "id": 1010,
+    "title": "Tech Lead, Front-End",
+    "company": "Big Data Co.",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 160000,
+      "max": 200000
+    },
+    "experienceLevel": "Senior",
+    "requiredTech": [
+      "React",
+      "TypeScript",
+      "AWS",
+      "Mentorship"
+    ],
+    "description": "Lead and grow a team of 5 engineers.",
+    "datePosted": "2025-09-30T09:00:00Z"
+  },
+  {
+    "id": 1011,
+    "title": "Sample Job 1011",
+    "company": "Company 1011",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1011.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1012,
+    "title": "Sample Job 1012",
+    "company": "Company 1012",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1012.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1013,
+    "title": "Sample Job 1013",
+    "company": "Company 1013",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1013.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1014,
+    "title": "Sample Job 1014",
+    "company": "Company 1014",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1014.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1015,
+    "title": "Sample Job 1015",
+    "company": "Company 1015",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1015.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1016,
+    "title": "Sample Job 1016",
+    "company": "Company 1016",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1016.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1017,
+    "title": "Sample Job 1017",
+    "company": "Company 1017",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1017.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1018,
+    "title": "Sample Job 1018",
+    "company": "Company 1018",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1018.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1019,
+    "title": "Sample Job 1019",
+    "company": "Company 1019",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1019.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1020,
+    "title": "Sample Job 1020",
+    "company": "Company 1020",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1020.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1021,
+    "title": "Sample Job 1021",
+    "company": "Company 1021",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1021.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1022,
+    "title": "Sample Job 1022",
+    "company": "Company 1022",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1022.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1023,
+    "title": "Sample Job 1023",
+    "company": "Company 1023",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1023.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1024,
+    "title": "Sample Job 1024",
+    "company": "Company 1024",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1024.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1025,
+    "title": "Sample Job 1025",
+    "company": "Company 1025",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1025.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1026,
+    "title": "Sample Job 1026",
+    "company": "Company 1026",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1026.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1027,
+    "title": "Sample Job 1027",
+    "company": "Company 1027",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1027.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1028,
+    "title": "Sample Job 1028",
+    "company": "Company 1028",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1028.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1029,
+    "title": "Sample Job 1029",
+    "company": "Company 1029",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1029.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1030,
+    "title": "Sample Job 1030",
+    "company": "Company 1030",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1030.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1031,
+    "title": "Sample Job 1031",
+    "company": "Company 1031",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1031.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1032,
+    "title": "Sample Job 1032",
+    "company": "Company 1032",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1032.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1033,
+    "title": "Sample Job 1033",
+    "company": "Company 1033",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1033.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1034,
+    "title": "Sample Job 1034",
+    "company": "Company 1034",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1034.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1035,
+    "title": "Sample Job 1035",
+    "company": "Company 1035",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1035.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1036,
+    "title": "Sample Job 1036",
+    "company": "Company 1036",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1036.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1037,
+    "title": "Sample Job 1037",
+    "company": "Company 1037",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1037.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1038,
+    "title": "Sample Job 1038",
+    "company": "Company 1038",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1038.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1039,
+    "title": "Sample Job 1039",
+    "company": "Company 1039",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1039.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1040,
+    "title": "Sample Job 1040",
+    "company": "Company 1040",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1040.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1041,
+    "title": "Sample Job 1041",
+    "company": "Company 1041",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1041.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1042,
+    "title": "Sample Job 1042",
+    "company": "Company 1042",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1042.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1043,
+    "title": "Sample Job 1043",
+    "company": "Company 1043",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1043.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1044,
+    "title": "Sample Job 1044",
+    "company": "Company 1044",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1044.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1045,
+    "title": "Sample Job 1045",
+    "company": "Company 1045",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1045.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1046,
+    "title": "Sample Job 1046",
+    "company": "Company 1046",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1046.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1047,
+    "title": "Sample Job 1047",
+    "company": "Company 1047",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1047.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1048,
+    "title": "Sample Job 1048",
+    "company": "Company 1048",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1048.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1049,
+    "title": "Sample Job 1049",
+    "company": "Company 1049",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1049.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  },
+  {
+    "id": 1050,
+    "title": "Sample Job 1050",
+    "company": "Company 1050",
+    "location": "Remote",
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "experienceLevel": "Mid-Level",
+    "requiredTech": [
+      "React",
+      "JavaScript"
+    ],
+    "description": "This is a placeholder description for job 1050.",
+    "datePosted": "2025-09-30T12:00:00Z"
+  }
+]
