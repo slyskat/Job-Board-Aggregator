@@ -9,11 +9,7 @@
       "max": 75000
     },
     "experienceLevel": "Entry-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript",
-      "HTML/CSS"
-    ],
+    "requiredTech": ["React", "JavaScript", "HTML/CSS"],
     "description": "Seeking a passionate developer for our core platform UI.",
     "datePosted": "2025-09-29T10:00:00Z"
   },
@@ -26,10 +22,7 @@
       "min": 50000
     },
     "experienceLevel": "Entry-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
+    "requiredTech": ["React", "JavaScript"],
     "description": "Work closely with our senior team on component library design.",
     "datePosted": "2025-09-28T15:30:00Z"
   },
@@ -43,12 +36,7 @@
       "max": 140000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "GraphQL"
-    ],
+    "requiredTech": ["React", "TypeScript", "Node.js", "GraphQL"],
     "description": "A high-impact role driving features for millions of users.",
     "datePosted": "2025-09-25T08:00:00Z"
   },
@@ -62,12 +50,7 @@
       "max": 160000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "TypeScript",
-      "Redux",
-      "CI/CD"
-    ],
+    "requiredTech": ["React", "TypeScript", "Redux", "CI/CD"],
     "description": "Architect scalable solutions in a regulated environment.",
     "datePosted": "2025-09-27T12:00:00Z"
   },
@@ -81,11 +64,7 @@
       "max": 120000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "Figma",
-      "SASS"
-    ],
+    "requiredTech": ["React", "Figma", "SASS"],
     "description": "Collaborate with design team to build pixel-perfect UIs.",
     "datePosted": "2025-09-20T11:00:00Z"
   },
@@ -118,11 +97,7 @@
       "max": 175000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React Native",
-      "TypeScript",
-      "iOS/Android"
-    ],
+    "requiredTech": ["React Native", "TypeScript", "iOS/Android"],
     "description": "Build cross-platform mobile applications for our clients.",
     "datePosted": "2025-09-29T07:00:00Z"
   },
@@ -136,12 +111,8 @@
       "max": 150000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "Java",
-      "SQL"
-    ],
-    "description": null,
+    "requiredTech": ["React", "Java", "SQL"],
+    "description": "Modernize enterprise applications while maintaining legacy systems.",
     "datePosted": "2025-09-26T14:00:00Z"
   },
   {
@@ -149,12 +120,12 @@
     "title": "Front-End Developer",
     "company": "Local Agency",
     "location": "Remote",
+    "salaryRange": {
+      "min": 55000,
+      "max": 70000
+    },
     "experienceLevel": "Entry-Level",
-    "requiredTech": [
-      "JavaScript",
-      "SASS",
-      "HTML"
-    ],
+    "requiredTech": ["JavaScript", "SASS", "HTML"],
     "description": "Collaborate on small business websites.",
     "datePosted": "2025-09-24T16:00:00Z"
   },
@@ -168,693 +139,578 @@
       "max": 200000
     },
     "experienceLevel": "Senior",
-    "requiredTech": [
-      "React",
-      "TypeScript",
-      "AWS",
-      "Mentorship"
-    ],
+    "requiredTech": ["React", "TypeScript", "AWS", "Mentorship"],
     "description": "Lead and grow a team of 5 engineers.",
     "datePosted": "2025-09-30T09:00:00Z"
   },
   {
     "id": 1011,
-    "title": "Sample Job 1011",
-    "company": "Company 1011",
-    "location": "Remote",
+    "title": "Vue.js Developer",
+    "company": "Marketing Automation Inc",
+    "location": "Austin, TX",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 90000,
+      "max": 115000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1011.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Vue.js", "JavaScript", "REST APIs"],
+    "description": "Build intuitive dashboards for marketing teams to track campaign performance.",
+    "datePosted": "2025-09-22T10:30:00Z"
   },
   {
     "id": 1012,
-    "title": "Sample Job 1012",
-    "company": "Company 1012",
-    "location": "Remote",
+    "title": "Angular Front-End Engineer",
+    "company": "Banking Solutions Ltd",
+    "location": "Boston, MA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 105000,
+      "max": 135000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1012.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Angular", "TypeScript", "RxJS"],
+    "description": "Develop secure banking interfaces with focus on accessibility and compliance.",
+    "datePosted": "2025-09-23T09:15:00Z"
   },
   {
     "id": 1013,
-    "title": "Sample Job 1013",
-    "company": "Company 1013",
+    "title": "Junior JavaScript Developer",
+    "company": "EdTech Innovations",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 58000,
+      "max": 72000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1013.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["JavaScript", "HTML/CSS", "Git"],
+    "description": "Help build interactive learning platforms for K-12 education.",
+    "datePosted": "2025-09-28T11:00:00Z"
   },
   {
     "id": 1014,
-    "title": "Sample Job 1014",
-    "company": "Company 1014",
-    "location": "Remote",
+    "title": "Senior React Engineer",
+    "company": "Travel Booking Platform",
+    "location": "Miami, FL",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 135000,
+      "max": 165000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1014.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Senior",
+    "requiredTech": ["React", "TypeScript", "Next.js", "Testing Library"],
+    "description": "Optimize booking flows and improve conversion rates for global travel platform.",
+    "datePosted": "2025-09-21T14:20:00Z"
   },
   {
     "id": 1015,
-    "title": "Sample Job 1015",
-    "company": "Company 1015",
-    "location": "Remote",
+    "title": "Front-End Developer - Gaming",
+    "company": "Pixel Studios",
+    "location": "Los Angeles, CA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 100000,
+      "max": 130000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1015.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "WebGL", "Three.js"],
+    "description": "Create immersive web-based gaming experiences and interactive animations.",
+    "datePosted": "2025-09-19T16:45:00Z"
   },
   {
     "id": 1016,
-    "title": "Sample Job 1016",
-    "company": "Company 1016",
+    "title": "E-commerce Front-End Specialist",
+    "company": "Fashion Retail Group",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 85000,
+      "max": 110000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1016.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "Shopify", "JavaScript"],
+    "description": "Build and maintain online shopping experiences with focus on mobile optimization.",
+    "datePosted": "2025-09-26T08:30:00Z"
   },
   {
     "id": 1017,
-    "title": "Sample Job 1017",
-    "company": "Company 1017",
-    "location": "Remote",
+    "title": "WordPress Front-End Developer",
+    "company": "Digital Agency Partners",
+    "location": "Denver, CO",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 70000,
+      "max": 90000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1017.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["WordPress", "PHP", "JavaScript", "CSS"],
+    "description": "Develop custom WordPress themes and plugins for diverse client base.",
+    "datePosted": "2025-09-25T13:10:00Z"
   },
   {
     "id": 1018,
-    "title": "Sample Job 1018",
-    "company": "Company 1018",
-    "location": "Remote",
+    "title": "Front-End Performance Engineer",
+    "company": "News Media Corp",
+    "location": "Washington, DC",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 125000,
+      "max": 155000
     },
-    "experienceLevel": "Mid-Level",
+    "experienceLevel": "Senior",
     "requiredTech": [
       "React",
-      "JavaScript"
+      "Performance Optimization",
+      "Webpack",
+      "Lighthouse"
     ],
-    "description": "This is a placeholder description for job 1018.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "description": "Optimize site speed and Core Web Vitals for high-traffic news platform.",
+    "datePosted": "2025-09-24T10:00:00Z"
   },
   {
     "id": 1019,
-    "title": "Sample Job 1019",
-    "company": "Company 1019",
+    "title": "UI Developer - Design Systems",
+    "company": "Software Consultancy",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 110000,
+      "max": 140000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1019.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "Storybook", "Design Tokens", "Figma"],
+    "description": "Build and maintain comprehensive design system used across multiple products.",
+    "datePosted": "2025-09-27T15:30:00Z"
   },
   {
     "id": 1020,
-    "title": "Sample Job 1020",
-    "company": "Company 1020",
-    "location": "Remote",
+    "title": "Accessibility Front-End Developer",
+    "company": "Government Services Tech",
+    "location": "Arlington, VA",
     "salaryRange": {
-      "min": 80000,
+      "min": 95000,
       "max": 120000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1020.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "WCAG", "ARIA", "Screen Readers"],
+    "description": "Ensure government websites meet Section 508 and WCAG 2.1 AA standards.",
+    "datePosted": "2025-09-20T09:45:00Z"
   },
   {
     "id": 1021,
-    "title": "Sample Job 1021",
-    "company": "Company 1021",
-    "location": "Remote",
+    "title": "React Developer - SaaS",
+    "company": "Project Management Tools",
+    "location": "San Diego, CA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 100000,
+      "max": 130000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1021.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "TypeScript", "Zustand", "React Query"],
+    "description": "Develop collaborative features for project management and team communication platform.",
+    "datePosted": "2025-09-29T12:20:00Z"
   },
   {
     "id": 1022,
-    "title": "Sample Job 1022",
-    "company": "Company 1022",
-    "location": "Remote",
+    "title": "Front-End Developer Intern",
+    "company": "Social Media Startup",
+    "location": "New York, NY",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 45000,
+      "max": 55000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1022.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["React", "JavaScript", "CSS"],
+    "description": "Join our growing team to build features for next-generation social platform.",
+    "datePosted": "2025-09-28T14:00:00Z"
   },
   {
     "id": 1023,
-    "title": "Sample Job 1023",
-    "company": "Company 1023",
+    "title": "Svelte Developer",
+    "company": "Real-time Analytics",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 105000,
+      "max": 135000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1023.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Svelte", "JavaScript", "D3.js", "WebSockets"],
+    "description": "Build real-time data visualization dashboards with cutting-edge framework.",
+    "datePosted": "2025-09-26T11:30:00Z"
   },
   {
     "id": 1024,
-    "title": "Sample Job 1024",
-    "company": "Company 1024",
-    "location": "Remote",
+    "title": "Front-End Architect",
+    "company": "Insurance Technology",
+    "location": "Hartford, CT",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 155000,
+      "max": 190000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1024.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Senior",
+    "requiredTech": ["React", "TypeScript", "Architecture", "Microservices"],
+    "description": "Design front-end architecture for enterprise insurance platform modernization.",
+    "datePosted": "2025-09-23T08:15:00Z"
   },
   {
     "id": 1025,
-    "title": "Sample Job 1025",
-    "company": "Company 1025",
-    "location": "Remote",
+    "title": "Mobile Web Developer",
+    "company": "Food Delivery Service",
+    "location": "Chicago, IL",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 90000,
+      "max": 115000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1025.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "PWA", "Service Workers", "Mobile-First"],
+    "description": "Optimize mobile web experience for food ordering and delivery tracking.",
+    "datePosted": "2025-09-22T13:40:00Z"
   },
   {
     "id": 1026,
-    "title": "Sample Job 1026",
-    "company": "Company 1026",
+    "title": "Contract Front-End Developer",
+    "company": "Consulting Firm",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 75,
+      "max": 95
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1026.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "TypeScript", "Next.js"],
+    "description": "6-month contract building client-facing dashboards. Rate shown is hourly.",
+    "datePosted": "2025-09-27T10:20:00Z"
   },
   {
     "id": 1027,
-    "title": "Sample Job 1027",
-    "company": "Company 1027",
-    "location": "Remote",
+    "title": "Junior UI Engineer",
+    "company": "Music Streaming Platform",
+    "location": "Nashville, TN",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 65000,
+      "max": 80000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1027.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["React", "JavaScript", "Web Audio API"],
+    "description": "Help build beautiful music player interfaces and playlist management features.",
+    "datePosted": "2025-09-25T16:15:00Z"
   },
   {
     "id": 1028,
-    "title": "Sample Job 1028",
-    "company": "Company 1028",
+    "title": "Front-End Engineer - Blockchain",
+    "company": "Crypto Exchange",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 130000,
+      "max": 170000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1028.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "Web3.js", "TypeScript", "Ethereum"],
+    "description": "Build trading interfaces and wallet integration for cryptocurrency platform.",
+    "datePosted": "2025-09-21T09:30:00Z"
   },
   {
     "id": 1029,
-    "title": "Sample Job 1029",
-    "company": "Company 1029",
-    "location": "Remote",
+    "title": "Ember.js Developer",
+    "company": "Fleet Management Software",
+    "location": "Dallas, TX",
     "salaryRange": {
-      "min": 80000,
+      "min": 95000,
       "max": 120000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1029.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Ember.js", "JavaScript", "Ember Data"],
+    "description": "Maintain and enhance logistics tracking system built on Ember framework.",
+    "datePosted": "2025-09-24T11:45:00Z"
   },
   {
     "id": 1030,
-    "title": "Sample Job 1030",
-    "company": "Company 1030",
-    "location": "Remote",
+    "title": "Creative Front-End Developer",
+    "company": "Interactive Agency",
+    "location": "Portland, OR",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 85000,
+      "max": 110000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1030.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "GSAP", "Canvas", "WebGL"],
+    "description": "Create award-winning interactive experiences and brand campaigns.",
+    "datePosted": "2025-09-26T14:30:00Z"
   },
   {
     "id": 1031,
-    "title": "Sample Job 1031",
-    "company": "Company 1031",
+    "title": "Front-End Team Lead",
+    "company": "HR Software Solutions",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 145000,
+      "max": 175000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1031.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Senior",
+    "requiredTech": ["React", "TypeScript", "Leadership", "Agile"],
+    "description": "Lead team of 6 developers building enterprise HR management platform.",
+    "datePosted": "2025-09-23T10:00:00Z"
   },
   {
     "id": 1032,
-    "title": "Sample Job 1032",
-    "company": "Company 1032",
-    "location": "Remote",
+    "title": "Next.js Developer",
+    "company": "Content Management Platform",
+    "location": "San Francisco, CA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 115000,
+      "max": 145000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1032.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Next.js", "React", "TypeScript", "Vercel"],
+    "description": "Build headless CMS interfaces with server-side rendering and static generation.",
+    "datePosted": "2025-09-20T15:20:00Z"
   },
   {
     "id": 1033,
-    "title": "Sample Job 1033",
-    "company": "Company 1033",
+    "title": "Front-End QA Engineer",
+    "company": "Testing Solutions Inc",
     "location": "Remote",
     "salaryRange": {
       "min": 80000,
-      "max": 120000
+      "max": 105000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1033.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Cypress", "Jest", "Testing Library", "JavaScript"],
+    "description": "Develop automated testing strategies and maintain test suites for React applications.",
+    "datePosted": "2025-09-27T09:15:00Z"
   },
   {
     "id": 1034,
-    "title": "Sample Job 1034",
-    "company": "Company 1034",
+    "title": "Web3 Front-End Developer",
+    "company": "NFT Marketplace",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 120000,
+      "max": 160000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1034.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "ethers.js", "IPFS", "Metamask"],
+    "description": "Build decentralized marketplace for digital collectibles and NFT trading.",
+    "datePosted": "2025-09-22T12:30:00Z"
   },
   {
     "id": 1035,
-    "title": "Sample Job 1035",
-    "company": "Company 1035",
-    "location": "Remote",
+    "title": "Junior React Developer",
+    "company": "Fitness App Startup",
+    "location": "Austin, TX",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 62000,
+      "max": 78000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1035.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["React", "JavaScript", "REST APIs"],
+    "description": "Help build workout tracking and nutrition planning features for fitness enthusiasts.",
+    "datePosted": "2025-09-28T10:45:00Z"
   },
   {
     "id": 1036,
-    "title": "Sample Job 1036",
-    "company": "Company 1036",
+    "title": "Gatsby Developer",
+    "company": "Marketing Agency",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 90000,
+      "max": 115000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1036.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Gatsby", "React", "GraphQL", "Contentful"],
+    "description": "Build high-performance marketing sites and blogs using Gatsby and headless CMS.",
+    "datePosted": "2025-09-25T14:00:00Z"
   },
   {
     "id": 1037,
-    "title": "Sample Job 1037",
-    "company": "Company 1037",
-    "location": "Remote",
+    "title": "Front-End Security Engineer",
+    "company": "Cybersecurity Firm",
+    "location": "Reston, VA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 135000,
+      "max": 170000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1037.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Senior",
+    "requiredTech": ["React", "Security", "OWASP", "Penetration Testing"],
+    "description": "Focus on front-end security, vulnerability assessment, and secure coding practices.",
+    "datePosted": "2025-09-21T08:30:00Z"
   },
   {
     "id": 1038,
-    "title": "Sample Job 1038",
-    "company": "Company 1038",
+    "title": "HTML Email Developer",
+    "company": "Email Marketing Platform",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 65000,
+      "max": 85000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1038.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["HTML", "CSS", "Email Clients", "Responsive Design"],
+    "description": "Create responsive email templates compatible with all major email clients.",
+    "datePosted": "2025-09-26T13:20:00Z"
   },
   {
     "id": 1039,
-    "title": "Sample Job 1039",
-    "company": "Company 1039",
-    "location": "Remote",
+    "title": "Front-End Staff Engineer",
+    "company": "Video Streaming Service",
+    "location": "Los Angeles, CA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 190000,
+      "max": 240000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1039.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Senior",
+    "requiredTech": ["React", "TypeScript", "Video.js", "System Design"],
+    "description": "Define technical direction for video player and streaming infrastructure.",
+    "datePosted": "2025-09-19T11:00:00Z"
   },
   {
     "id": 1040,
-    "title": "Sample Job 1040",
-    "company": "Company 1040",
+    "title": "Remix Developer",
+    "company": "Developer Tools Startup",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 110000,
+      "max": 140000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1040.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["Remix", "React", "TypeScript", "Progressive Enhancement"],
+    "description": "Build documentation site and developer portal using Remix framework.",
+    "datePosted": "2025-09-24T09:30:00Z"
   },
   {
     "id": 1041,
-    "title": "Sample Job 1041",
-    "company": "Company 1041",
-    "location": "Remote",
+    "title": "Front-End Engineer - Maps",
+    "company": "Location Services Tech",
+    "location": "Seattle, WA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 125000,
+      "max": 155000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1041.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "Mapbox", "Leaflet", "GeoJSON"],
+    "description": "Develop interactive mapping features and location-based visualizations.",
+    "datePosted": "2025-09-23T15:45:00Z"
   },
   {
     "id": 1042,
-    "title": "Sample Job 1042",
-    "company": "Company 1042",
+    "title": "Component Library Engineer",
+    "company": "Design System Company",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 120000,
+      "max": 150000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1042.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "TypeScript", "Storybook", "TailwindCSS"],
+    "description": "Build and maintain open-source component library used by thousands of developers.",
+    "datePosted": "2025-09-22T10:15:00Z"
   },
   {
     "id": 1043,
-    "title": "Sample Job 1043",
-    "company": "Company 1043",
-    "location": "Remote",
+    "title": "Shopify Theme Developer",
+    "company": "E-commerce Agency",
+    "location": "Toronto, Canada",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 70000,
+      "max": 90000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1043.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["Liquid", "JavaScript", "Shopify", "CSS"],
+    "description": "Customize Shopify themes and build custom e-commerce features for clients.",
+    "datePosted": "2025-09-27T11:30:00Z"
   },
   {
     "id": 1044,
-    "title": "Sample Job 1044",
-    "company": "Company 1044",
+    "title": "WebAssembly Front-End Engineer",
+    "company": "Performance Computing",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 140000,
+      "max": 180000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1044.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Senior",
+    "requiredTech": ["WebAssembly", "Rust", "JavaScript", "React"],
+    "description": "Optimize compute-intensive web applications using WebAssembly.",
+    "datePosted": "2025-09-20T14:20:00Z"
   },
   {
     "id": 1045,
-    "title": "Sample Job 1045",
-    "company": "Company 1045",
-    "location": "Remote",
+    "title": "Front-End Developer - IoT",
+    "company": "Smart Home Devices",
+    "location": "San Jose, CA",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 105000,
+      "max": 135000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1045.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "MQTT", "WebSockets", "IoT Protocols"],
+    "description": "Build control interfaces for smart home devices and IoT dashboard.",
+    "datePosted": "2025-09-25T09:00:00Z"
   },
   {
     "id": 1046,
-    "title": "Sample Job 1046",
-    "company": "Company 1046",
+    "title": "React Native + Web Developer",
+    "company": "Cross-Platform Startup",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 115000,
+      "max": 145000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1046.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "React Native", "TypeScript", "Expo"],
+    "description": "Maintain shared codebase for iOS, Android, and web applications.",
+    "datePosted": "2025-09-26T12:45:00Z"
   },
   {
     "id": 1047,
-    "title": "Sample Job 1047",
-    "company": "Company 1047",
-    "location": "Remote",
+    "title": "Front-End Consultant",
+    "company": "Technology Consulting",
+    "location": "Multiple Locations",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 130000,
+      "max": 165000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1047.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Senior",
+    "requiredTech": ["React", "Vue", "Angular", "Consulting"],
+    "description": "Advise clients on front-end architecture and implement solutions across various frameworks.",
+    "datePosted": "2025-09-21T10:30:00Z"
   },
   {
     "id": 1048,
-    "title": "Sample Job 1048",
-    "company": "Company 1048",
-    "location": "Remote",
+    "title": "Animation Front-End Developer",
+    "company": "Creative Digital Studio",
+    "location": "Brooklyn, NY",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 95000,
+      "max": 125000
     },
     "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1048.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "requiredTech": ["React", "Framer Motion", "GSAP", "CSS Animations"],
+    "description": "Bring designs to life with smooth animations and micro-interactions.",
+    "datePosted": "2025-09-24T13:15:00Z"
   },
   {
     "id": 1049,
-    "title": "Sample Job 1049",
-    "company": "Company 1049",
+    "title": "Front-End ML Engineer",
+    "company": "AI Products Company",
     "location": "Remote",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 135000,
+      "max": 170000
     },
     "experienceLevel": "Mid-Level",
     "requiredTech": [
       "React",
-      "JavaScript"
+      "TensorFlow.js",
+      "TypeScript",
+      "Machine Learning"
     ],
-    "description": "This is a placeholder description for job 1049.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "description": "Integrate machine learning models into web interfaces for real-time predictions.",
+    "datePosted": "2025-09-23T16:00:00Z"
   },
   {
     "id": 1050,
-    "title": "Sample Job 1050",
-    "company": "Company 1050",
-    "location": "Remote",
+    "title": "Junior Full Stack Developer",
+    "company": "Productivity Software",
+    "location": "Boulder, CO",
     "salaryRange": {
-      "min": 80000,
-      "max": 120000
+      "min": 68000,
+      "max": 85000
     },
-    "experienceLevel": "Mid-Level",
-    "requiredTech": [
-      "React",
-      "JavaScript"
-    ],
-    "description": "This is a placeholder description for job 1050.",
-    "datePosted": "2025-09-30T12:00:00Z"
+    "experienceLevel": "Entry-Level",
+    "requiredTech": ["React", "Node.js", "MongoDB", "Express"],
+    "description": "Work across the stack building features for task management and collaboration platform.",
+    "datePosted": "2025-09-29T09:00:00Z"
   }
 ]
