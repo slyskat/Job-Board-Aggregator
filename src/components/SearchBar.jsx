@@ -1,5 +1,6 @@
 import { Filter, MapPin, Search } from "lucide-react";
 import Button from "./ui/Button";
+import styles from "./SearchBar.module.css";
 
 function SearchBar({
   searchQuery,

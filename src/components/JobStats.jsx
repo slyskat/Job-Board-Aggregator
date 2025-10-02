@@ -3,13 +3,13 @@ import { TrendingUp, MapPin, DollarSign, Clock } from "lucide-react";
 function JobStats({ jobs }) {
   // console.log(jobs);
   const totalJobs = jobs.length;
-  console.log(totalJobs);
+  // console.log(totalJobs);
   const remoteJobs = jobs.filter((job) => job.isRemote).length;
-  console.log(remoteJobs);
+  // console.log(remoteJobs);
 
   const remotePercentage =
     totalJobs > 0 ? Math.round((remoteJobs / totalJobs) * 100) : 0;
-  console.log(remotePercentage);
+  // console.log(remotePercentage);
 
   const avgSalary =
     jobs.reduce((acc, job) => {

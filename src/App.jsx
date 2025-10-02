@@ -44,6 +44,8 @@ function App() {
 
     return matchesKeyword && matchesLocation;
   });
+
+  // console.log(typeof filteredJobs);
   return (
     <div>
       <Header />
