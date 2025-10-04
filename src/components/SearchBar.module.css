@@ -1,4 +1,138 @@
-searchbarContainer {
+.searchContainer {
+  margin-bottom: 2rem;
+}
+
+.searchForm {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border: 1px solid var(--color-border);
+}
+
+.searchInputs {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+
+.searchInputContainer,
+.locationInputContainer {
+  position: relative;
+  flex: 1;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #717182;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.searchInput,
+.locationInput {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 2.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.625rem;
+  background-color: #f3f3f5;
+  color: #0a0a0a;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus,
+.locationInput:focus {
+  outline: none;
+  border-color: #030213;
+  box-shadow: 0 0 0 2px #94a3b8;
+}
+
+.clearButton {
+  background-color: #030213;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.clearButton:hover {
+  background-color: #030213;
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.filtersButton {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid var(--color-border);
+  padding: 0.75rem 1rem;
+  border-radius: 0.625rem;
+  color: #717182;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filtersButton:hover {
+  color: #0a0a0a;
+  border-color: #030213;
+  background-color: #e9ebef;
+}
+
+.filtersIcon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.filtersText {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .searchForm {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .searchInputs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .clearButton,
+  .filtersButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .searchInputs {
+    gap: 0.75rem;
+  }
+
+  .searchInput,
+  .locationInput {
+    padding: 0.625rem 0.625rem 0.625rem 2.5rem;
+  }
+
+  .inputIcon {
+    left: 0.625rem;
+    width: 1rem;
+    height: 1rem;
+  }
 }

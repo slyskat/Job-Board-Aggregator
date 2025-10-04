@@ -11,6 +11,6 @@ export function normalizeJobData(jobsData) {
     description: job.description || "No detailed description provided.",
     postedDate: new Date(job.datePosted),
     isSaved: false,
-    isRemote: job.location === "Remote",
+    isRemote: job.location === "Remote" ? true : false,
   }));
 }

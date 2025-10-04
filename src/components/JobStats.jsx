@@ -1,16 +1,11 @@
 import { TrendingUp, MapPin, DollarSign, Clock } from "lucide-react";
+import styles from "./JobStats.module.css";
 
 function JobStats({ jobs }) {
-  // console.log(jobs);
   const totalJobs = jobs.length;
-  // console.log(totalJobs);
   const remoteJobs = jobs.filter((job) => job.isRemote).length;
-  // console.log(remoteJobs);
-
   const remotePercentage =
     totalJobs > 0 ? Math.round((remoteJobs / totalJobs) * 100) : 0;
-  // console.log(remotePercentage);
-
   const avgSalary =
     jobs.reduce((acc, job) => {
       return acc + (job.minSalary + job.maxSalary) / 2;
@@ -20,7 +15,6 @@ function JobStats({ jobs }) {
         typeof job.minSalary === "number" && typeof job.maxSalary === "number"
       );
     }).length;
-
   const recentJobs = jobs.filter((job) => {
     const posted = new Date(job.datePosted);
     const now = new Date();
@@ -59,18 +53,19 @@ function JobStats({ jobs }) {
   ];
 
   return (
-    <div>
+    <div className={styles.statsContainer}>
       {stats.map((stat) => {
+        const Icon = stat.icon;
         return (
           <div key={stat.label}>
-            <div>
-              <div>
-                <stat.icon></stat.icon>
+            <div className={styles.statCard}>
+              <div className={styles.statIcon}>
+                <Icon className={styles.icon}></Icon>
               </div>
-              <div>
-                <p>{stat.label}</p>
-                <p>{stat.value}</p>
-                <p>{stat.subtitle}</p>
+              <div className={styles.statInfo}>
+                <p className={styles.statLabel}>{stat.label}</p>
+                <p className={styles.statValue}>{stat.value}</p>
+                <p className={styles.statSubtitle}>{stat.subtitle}</p>
               </div>
             </div>
           </div>

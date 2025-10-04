@@ -1,9 +1,7 @@
-import { formatPostedDate } from "../utils/dateFormatter";
-import { formatSalary } from "../utils/salaryFormatter";
-import { limitTechStack } from "../utils/stackFormatter";
 import JobCard from "./JobCard";
+import styles from "./JobList.module.css";
 
-function JobList({ jobs }) {
+function JobList({ jobs, onSaveJob }) {
   // console.log(jobs);
 
   // console.log(formatPostedDate(postedDate));
@@ -13,17 +11,9 @@ function JobList({ jobs }) {
 
   return (
     <div>
-      <div>
-        <p>Jobs &gt; Search Results</p>
-        <h2>
-          {jobs.length} {jobs.length === 1 ? "job" : "jobs"} found
-          {/* {console.log(typeof jobs)} */}
-        </h2>
-      </div>
-
-      <div>
+      <div className={styles.jobList}>
         {jobs.map((job) => (
-          <JobCard key={job.id} job={job} />
+          <JobCard key={job.id} job={job} onSaveJob={onSaveJob} />
         ))}
       </div>
     </div>

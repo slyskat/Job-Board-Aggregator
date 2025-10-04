@@ -709,7 +709,14 @@
       "max": 85000
     },
     "experienceLevel": "Entry-Level",
-    "requiredTech": ["React", "Node.js", "MongoDB", "Express"],
+    "requiredTech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "TypeScript",
+      "Framer Motion"
+    ],
     "description": "Work across the stack building features for task management and collaboration platform.",
     "datePosted": "2025-09-29T09:00:00Z"
   }

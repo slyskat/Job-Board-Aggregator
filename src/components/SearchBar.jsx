@@ -9,39 +9,42 @@ function SearchBar({
   setLocationQuery,
 }) {
   return (
-    <div>
-      <div>
-        <div>
-          <div>
-            <Search />
+    <div className={styles.searchContainer}>
+      <div className={styles.searchForm}>
+        <div className={styles.searchInputs}>
+          <div className={styles.searchInputContainer}>
+            <Search className={styles.inputIcon} />
             <input
               placeholder="Job title, keywords, or company"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              className={styles.searchInput}
             />
           </div>
-          <div>
-            <MapPin />
+          <div className={styles.locationInputContainer}>
+            <MapPin className={styles.inputIcon} />
             <input
               placeholder="Location"
               value={locationquery}
               onChange={(e) => setLocationQuery(e.target.value)}
+              className={styles.locationInput}
             />
           </div>
-          <div>
-            <Button
-              onClick={() => {
-                setSearchQuery("");
-                setLocationQuery("");
-              }}
-            >
-              Clear All
-            </Button>
-            <Button>
-              <Filter />
-              Filters
-            </Button>
-          </div>
+
+          <button
+            type=""
+            onClick={() => {
+              setSearchQuery("");
+              setLocationQuery("");
+            }}
+            className={styles.clearButton}
+          >
+            Clear All
+          </button>
+          <button className={styles.filtersButton}>
+            <Filter className={styles.filtersIcon} />
+            <span className={styles.filtersText}>Filters</span>
+          </button>
         </div>
       </div>
     </div>

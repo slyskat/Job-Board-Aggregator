@@ -8,12 +8,14 @@ import JobStats from "./components/JobStats";
 import { useEffect, useState } from "react";
 import { fetchJobs } from "./utils/jobApi";
 import JobList from "./components/JobList";
+import { ChevronRight } from "lucide-react";
 
 function App() {
   const [rawJobsData, setRawJobsData] = useState([]);
   // const [filters, setFilters] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [locationquery, setLocationQuery] = useState("");
+
   // const [error, setError] = useState(null);
 
   useEffect(function () {
@@ -31,32 +33,66 @@ function App() {
 
   // const totalJobs = filteredJobs.length;
 
-  const filteredJobs = jobs.filter((job) => {
-    const matchesKeyword =
-      !searchQuery ||
-      job.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      job.company?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      job.description?.toLowerCase().includes(searchQuery.toLowerCase());
+  const [savedJobIds, setSavedJobIds] = useState(new Set());
 
-    const matchesLocation =
-      !locationquery ||
-      job.location?.toLowerCase().includes(locationquery.toLowerCase());
+  function handleSaveJob(id) {
+    setSavedJobIds((currentList) => {
+      const newList = new Set(currentList);
 
-    return matchesKeyword && matchesLocation;
-  });
+      if (newList.has(id)) {
+        newList.delete(id);
+      } else {
+        newList.add(id);
+      }
 
+      return newList;
+    });
+  }
+
+  const filteredJobs = jobs
+    .filter((job) => {
+      const matchesKeyword =
+        !searchQuery ||
+        job.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        job.company?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        job.description?.toLowerCase().includes(searchQuery.toLowerCase());
+
+      const matchesLocation =
+        !locationquery ||
+        job.location?.toLowerCase().includes(locationquery.toLowerCase());
+
+      return matchesKeyword && matchesLocation;
+    })
+    .map((job) => ({
+      ...job,
+      isSaved: savedJobIds.has(job.id),
+    }));
+
+  const savedCount = savedJobIds.size;
   // console.log(typeof filteredJobs);
   return (
-    <div>
-      <Header />
-      <SearchBar
-        searchQuery={searchQuery}
-        setLocationQuery={setLocationQuery}
-        setSearchQuery={setSearchQuery}
-        locationquery={locationquery}
-      />
-      <JobStats jobs={filteredJobs} />
-      <JobList jobs={filteredJobs} />
+    <div className="app">
+      <Header savedCount={savedCount} />
+      <div className="container">
+        <div className="layout">
+          <main className="main">
+            <SearchBar
+              searchQuery={searchQuery}
+              setLocationQuery={setLocationQuery}
+              setSearchQuery={setSearchQuery}
+              locationquery={locationquery}
+            />
+            <JobStats jobs={filteredJobs} />
+            <div className="breadcrumb">
+              <span>Jobs</span>
+              <ChevronRight className="breadcrumbIcon" />
+              <span>Search Results</span>
+            </div>
+
+            <JobList jobs={filteredJobs} onSaveJob={handleSaveJob} />
+          </main>
+        </div>
+      </div>
     </div>
   );
 }
