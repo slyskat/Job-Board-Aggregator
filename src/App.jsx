@@ -1,9 +1,6 @@
-// import { useState } from "react";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import { normalizeJobData } from "./utils/dataNormalizer";
-// import { fetchJobs } from "./utils/jobApi";
-// import rawJobsData from "./data/jobs.json";
 import JobStats from "./components/JobStats";
 import { useEffect, useState } from "react";
 import { fetchJobs } from "./utils/jobApi";
@@ -12,11 +9,9 @@ import { ChevronRight } from "lucide-react";
 
 function App() {
   const [rawJobsData, setRawJobsData] = useState([]);
-  // const [filters, setFilters] = useState([]);
+
   const [searchQuery, setSearchQuery] = useState("");
   const [locationquery, setLocationQuery] = useState("");
-
-  // const [error, setError] = useState(null);
 
   useEffect(function () {
     async function loadJobs() {
