@@ -12,11 +12,21 @@ function App() {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [locationquery, setLocationQuery] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
   useEffect(function () {
     async function loadJobs() {
-      const data = await fetchJobs();
-      setRawJobsData(data);
+     setError('');
+      try {
+    setIsLoading(true);
+    const data = await fetchJobs();
+    setRawJobsData(data);
+} catch (err) {
+ setError(err.message);
+} finally {
+setIsLoading(true);
+}
     }
 
     loadJobs();
@@ -24,9 +34,6 @@ function App() {
 
   const jobs = normalizeJobData(rawJobsData);
 
-  // console.log(jobs);
-
-  // const totalJobs = filteredJobs.length;
 
   const [savedJobIds, setSavedJobIds] = useState(new Set());
 
