@@ -1,4 +1,4 @@
-import { MapPin, X } from "lucide-react";
+import { Clock, MapPin, X } from "lucide-react";
 import Button from "./ui/Button";
 
 import styles from "./FilterSidebar.module.css";
@@ -42,6 +42,24 @@ function FilterSidebar({ isOpen }) {
 
               <div className={styles.toggleWrapper}>
                 <Toggle />
+                <label className={styles.toggleLabel}>
+                  Remote Positions only
+                </label>
+              </div>
+            </div>
+
+            <div className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <Clock className={styles.sectionIcon} />
+                <label className={styles.sectionLabel}>Job Type</label>
+              </div>
+              <div className={styles.checkboxContainer}>
+                {jobTypes.map((type) => (
+                  <div key={type.id} className={styles.checkboxItem}>
+                    <input type="checkbox" />
+                    <label className={styles.checkboxLabel}>{type.label}</label>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
