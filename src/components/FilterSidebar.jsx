@@ -3,6 +3,7 @@ import Button from "./ui/Button";
 
 import styles from "./FilterSidebar.module.css";
 import Toggle from "./ui/Toggle";
+import Checkbox from "./ui/Checkbox";
 
 function FilterSidebar({ isOpen }) {
   const jobTypes = [
@@ -56,7 +57,7 @@ function FilterSidebar({ isOpen }) {
               <div className={styles.checkboxContainer}>
                 {jobTypes.map((type) => (
                   <div key={type.id} className={styles.checkboxItem}>
-                    <input type="checkbox" />
+                    <Checkbox />
                     <label className={styles.checkboxLabel}>{type.label}</label>
                   </div>
                 ))}
