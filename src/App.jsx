@@ -6,12 +6,14 @@ import { useEffect, useState } from "react";
 import { fetchJobs } from "./utils/jobApi";
 import JobList from "./components/JobList";
 import { ChevronRight } from "lucide-react";
+import FilterSidebar from "./components/FilterSidebar";
 
 function App() {
   const [rawJobsData, setRawJobsData] = useState([]);
 
   const [searchQuery, setSearchQuery] = useState("");
   const [locationquery, setLocationQuery] = useState("");
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   useEffect(function () {
     async function loadJobs() {
@@ -70,6 +72,7 @@ function App() {
       <Header savedCount={savedCount} />
       <div className="container">
         <div className="layout">
+          <FilterSidebar />
           <main className="main">
             <SearchBar
               searchQuery={searchQuery}
