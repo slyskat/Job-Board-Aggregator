@@ -1,11 +1,20 @@
-import { Clock, MapPin, X } from "lucide-react";
+import { Building2, Clock, DollarSign, MapPin, X } from "lucide-react";
 import Button from "./ui/Button";
 
 import styles from "./FilterSidebar.module.css";
 import Toggle from "./ui/Toggle";
 import Checkbox from "./ui/Checkbox";
+import Slider from "./ui/Slider";
 
-function FilterSidebar({ isOpen }) {
+function FilterSidebar({
+  isOpen,
+  selectedJobTypes,
+  onJobTypeChange,
+  selectedExperienceLevels,
+  onExperienceLevelChange,
+  salaryRange,
+  onSalaryRangeChange,
+}) {
   const jobTypes = [
     { id: "full-time", label: "Full-time" },
     { id: "part-time", label: "Part-time" },
@@ -19,6 +28,34 @@ function FilterSidebar({ isOpen }) {
     { id: "senior", label: "Senior Level" },
     { id: "lead", label: "Lead/Principal" },
   ];
+
+  function handleJobTypeChangeToggle(typeId) {
+    onJobTypeChange((current) => {
+      const updated = new Set(current);
+      if (updated.has(typeId)) {
+        updated.delete(typeId);
+      } else {
+        updated.add(typeId);
+      }
+      return updated;
+    });
+  }
+
+  function handleExperienceLevelToggle(levelId) {
+    onExperienceLevelChange((current) => {
+      const updated = new Set(current);
+      if (updated.has(levelId)) {
+        updated.delete(levelId);
+      } else {
+        updated.add(levelId);
+      }
+      return updated;
+    });
+  }
+
+  function handleSalaryChange(value) {
+    onSalaryRangeChange({ min: value[0], max: value[1] });
+  }
 
   return (
     <>
@@ -57,10 +94,53 @@ function FilterSidebar({ isOpen }) {
               <div className={styles.checkboxContainer}>
                 {jobTypes.map((type) => (
                   <div key={type.id} className={styles.checkboxItem}>
-                    <Checkbox />
+                    <Checkbox
+                      checked={selectedJobTypes.has(type.id)}
+                      onChange={() => handleJobTypeChangeToggle(type.id)}
+                    />
                     <label className={styles.checkboxLabel}>{type.label}</label>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            <div className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <Building2 className={styles.sectionIcon} />
+                <label className={styles.sectionLabel}> Experience Level</label>
+              </div>
+              <div className={styles.checkboxContainer}>
+                {experienceLevels.map((level) => (
+                  <div key={level.id} className={styles.checkboxItem}>
+                    <Checkbox
+                      checked={selectedExperienceLevels.has(level.id)}
+                      onChange={() => handleExperienceLevelToggle(level.id)}
+                    />
+                    <label className={styles.checkboxLabel}>
+                      {level.label}
+                    </label>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <DollarSign className={styles.sectionIcon} />
+                <label className={styles.sectionLabel}>Salary Range</label>
+              </div>
+              <div className={styles.sliderWrapper}>
+                <Slider
+                  value={[salaryRange.min, salaryRange.max]}
+                  onChange={handleSalaryChange}
+                  max={300000}
+                  min={0}
+                  step={5000}
+                />
+                <div className={styles.salaryValues}>
+                  <span>${salaryRange.min.toLocaleString()}</span>
+                  <span>${salaryRange.max.toLocaleString()}</span>
+                </div>
               </div>
             </div>
           </div>

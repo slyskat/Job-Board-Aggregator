@@ -14,10 +14,17 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [locationquery, setLocationQuery] = useState("");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [savedJobIds, setSavedJobIds] = useState(new Set());
+  const [selectedJobTypes, setSelectedJobTypes] = useState(new Set());
+  const [selectedExperienceLevels, setSelectedExperienceLevels] = useState(
+    new Set()
+  );
+  const [salaryRange, setSalaryRange] = useState({ min: 0, max: 300000 });
 
   useEffect(function () {
     async function loadJobs() {
       const data = await fetchJobs();
+      console.log("Raw API Response: ", data);
       setRawJobsData(data);
     }
 
@@ -26,11 +33,12 @@ function App() {
 
   const jobs = normalizeJobData(rawJobsData);
 
+  console.log("Normalized Jobs:", jobs);
+  console.log("First job sample:", jobs[0]);
+
   // console.log(jobs);
 
   // const totalJobs = filteredJobs.length;
-
-  const [savedJobIds, setSavedJobIds] = useState(new Set());
 
   function handleSaveJob(id) {
     setSavedJobIds((currentList) => {
@@ -58,7 +66,35 @@ function App() {
         !locationquery ||
         job.location?.toLowerCase().includes(locationquery.toLowerCase());
 
-      return matchesKeyword && matchesLocation;
+      const matchesJobType =
+        selectedJobTypes.size === 0 || selectedJobTypes.has(job.jobType);
+
+      const matchesExperienceLevel =
+        selectedExperienceLevels.size === 0 ||
+        selectedExperienceLevels.has(job.experienceLevel);
+
+      const matchesSalary = (() => {
+        if (salaryRange.min === 0 && salaryRange.max === 300000) {
+          return true;
+        }
+
+        if (!job.minSalary && !job.maxSalary) {
+          return false;
+        }
+
+        const jobMin = job.minSalary || 0;
+        const jobMax = job.maxSalary || job.minSalary || 0;
+
+        return jobMax >= salaryRange.min && jobMin <= salaryRange.max;
+      })();
+
+      return (
+        matchesKeyword &&
+        matchesLocation &&
+        matchesJobType &&
+        matchesExperienceLevel &&
+        matchesSalary
+      );
     })
     .map((job) => ({
       ...job,
@@ -72,7 +108,16 @@ function App() {
       <Header savedCount={savedCount} />
       <div className="container">
         <div className="layout">
-          <FilterSidebar />
+          <FilterSidebar
+            isOpen={isFilterOpen}
+            onFilterChange={setIsFilterOpen}
+            selectedJobTypes={selectedJobTypes}
+            onJobTypeChange={setSelectedJobTypes}
+            selectedExperienceLevels={selectedExperienceLevels}
+            onExperienceLevelChange={setSelectedExperienceLevels}
+            salaryRange={salaryRange}
+            onSalaryRangeChange={setSalaryRange}
+          />
           <main className="main">
             <SearchBar
               searchQuery={searchQuery}
