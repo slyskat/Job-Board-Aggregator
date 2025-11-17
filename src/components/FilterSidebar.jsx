@@ -1,10 +1,10 @@
-import { Building2, Clock, DollarSign, MapPin, X } from "lucide-react";
+import { Building2, Clock, MapPin, X } from "lucide-react";
 import Button from "./ui/Button";
 
 import styles from "./FilterSidebar.module.css";
 import Toggle from "./ui/Toggle";
 import Checkbox from "./ui/Checkbox";
-import Slider from "./ui/Slider";
+// import Slider from "./ui/Slider";
 
 function FilterSidebar({
   isOpen,
@@ -12,8 +12,12 @@ function FilterSidebar({
   onJobTypeChange,
   selectedExperienceLevels,
   onExperienceLevelChange,
-  salaryRange,
-  onSalaryRangeChange,
+  // salaryRange,
+  // onSalaryRangeChange,
+  isRemoteOnly,
+  onRemoteOnlyChange,
+  datePosted,
+  onDatePostedChange,
 }) {
   const jobTypes = [
     { id: "full-time", label: "Full-time" },
@@ -53,19 +57,22 @@ function FilterSidebar({
     });
   }
 
-  function handleSalaryChange(value) {
-    onSalaryRangeChange({ min: value[0], max: value[1] });
-  }
+  // function handleSalaryChange(value) {
+  //   onSalaryRangeChange({ min: value[0], max: value[1] });
+  // }
 
   return (
     <>
-      <div className={styles.filterModal}>
+      <div className={`${styles.filterModal} ${isOpen ? styles.open : ""}`}>
         <div className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
           <div className={styles.header}>
             <h3 className={styles.title}>Filters</h3>
             <div className={styles.headerButtons}>
-              <Button>Clear All</Button>
-              <Button>
+              <Button btnType="secondary" size="small">
+                {" "}
+                Clear All
+              </Button>
+              <Button btnType="secondary" size="small">
                 <X className={styles.closeIcon} />
               </Button>
             </div>
@@ -79,7 +86,10 @@ function FilterSidebar({
               </div>
 
               <div className={styles.toggleWrapper}>
-                <Toggle />
+                <Toggle
+                  checked={isRemoteOnly}
+                  onChange={(e) => onRemoteOnlyChange(e.target.checked)}
+                />
                 <label className={styles.toggleLabel}>
                   Remote Positions only
                 </label>
@@ -124,7 +134,7 @@ function FilterSidebar({
               </div>
             </div>
 
-            <div className={styles.section}>
+            {/* <div className={styles.section}>
               <div className={styles.sectionHeader}>
                 <DollarSign className={styles.sectionIcon} />
                 <label className={styles.sectionLabel}>Salary Range</label>
@@ -142,7 +152,39 @@ function FilterSidebar({
                   <span>${salaryRange.max.toLocaleString()}</span>
                 </div>
               </div>
+            </div> */}
+
+            <div className={styles.section}>
+              <label className={styles.sectionLabel}>Date Posted</label>
+              <select
+                className={styles.select}
+                value={datePosted}
+                onChange={(e) => onDatePostedChange(e.target.value)}
+              >
+                <option value="">Any time</option>
+                <option value="24h">Last 24 hours</option>
+                <option value="3d">Last 3 days</option>
+                <option value="7d">Last week</option>
+                <option value="30d">Last month</option>
+              </select>
             </div>
+
+            {/* <div className={styles.section}>
+              <label className={styles.sectionLabel}>Job Sources</label>
+              <div className={styles.checkboxGroup}>
+                {jobSources.map((source) => (
+                  <div key={source} className={styles.checkboxItem}>
+                    <Checkbox
+                      checked={filters.source.includes(source)}
+                      onChange={(e) =>
+                        handleSourceChange(source, e.target.checked)
+                      }
+                    />
+                    <label className={styles.checkboxLabel}>{source}</label>
+                  </div>
+                ))}
+              </div>
+            </div> */}
           </div>
         </div>
       </div>

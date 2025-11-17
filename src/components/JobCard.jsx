@@ -5,7 +5,7 @@ import { BookmarkIcon, Clock, DollarSign, MapPin } from "lucide-react";
 import Button from "./ui/Button";
 import styles from "./JobCard.module.css";
 
-function JobCard({ job, onSaveJob }) {
+function JobCard({ job, onSaveJob, onJobClick }) {
   // console.log(job);
   // console.log(job?.id);
 
@@ -29,15 +29,13 @@ function JobCard({ job, onSaveJob }) {
 
   // const onSaveJob = (isSaved) => {};
 
-  // console.log(requiredTech);
-
   const salary = formatSalary(minSalary, maxSalary);
   const date = formatPostedDate(postedDate);
   const limit = 5;
   const techStack = limitTechStack(requiredTech, limit);
 
   return (
-    <div className={styles.jobCard}>
+    <div className={styles.jobCard} onClick={() => onJobClick(job)}>
       <div className={styles.cardHeader}>
         <div className={styles.companyInfo}>
           <div className={styles.jobInfo}>

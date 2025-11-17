@@ -2,14 +2,14 @@ import styles from "./Button.module.css";
 
 function Button({
   children,
-  type = "primary",
+  btnType = "primary",
   size = "default",
   className = "",
   onClick,
   ...props
 }) {
   const defaultStyle = styles.button;
-  const buttonType = styles[type] || styles.primary;
+  const buttonType = styles[btnType] || styles.primary;
   const buttonSize = styles[size] || styles.default;
 
   const buttonClassName =

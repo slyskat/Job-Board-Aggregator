@@ -7,6 +7,7 @@ import { fetchJobs } from "./utils/jobApi";
 import JobList from "./components/JobList";
 import { ChevronRight } from "lucide-react";
 import FilterSidebar from "./components/FilterSidebar";
+import { set } from "date-fns";
 
 function App() {
   const [rawJobsData, setRawJobsData] = useState([]);
@@ -20,6 +21,10 @@ function App() {
     new Set()
   );
   const [salaryRange, setSalaryRange] = useState({ min: 0, max: 300000 });
+  const [datePosted, setDatePosted] = useState("");
+  const [isRemoteOnly, setIsRemoteOnly] = useState(false);
+  const [selectedJob, setSelectedJob] = useState(null);
+  const [isJobModalOpen, setIsJobModalOpen] = useState(false);
 
   useEffect(function () {
     async function loadJobs() {
@@ -88,18 +93,54 @@ function App() {
         return jobMax >= salaryRange.min && jobMin <= salaryRange.max;
       })();
 
+      const matchesRemote = !isRemoteOnly || job.isRemote;
+
+      const matchesDatePosted = (() => {
+        if (!datePosted) return true;
+
+        const now = new Date();
+        const jobDate = new Date(job.postedDate);
+        const differenceInHours = (now - jobDate) / (1000 * 60 * 60);
+
+        switch (datePosted) {
+          case "24h":
+            return differenceInHours <= 24;
+          case "3d":
+            return differenceInHours <= 72;
+
+          case "7d":
+            return differenceInHours <= 168;
+          case "30d":
+            return differenceInHours <= 720;
+          default:
+            return true;
+        }
+      })();
+
       return (
         matchesKeyword &&
         matchesLocation &&
         matchesJobType &&
         matchesExperienceLevel &&
-        matchesSalary
+        matchesSalary &&
+        matchesRemote &&
+        matchesDatePosted
       );
     })
     .map((job) => ({
       ...job,
       isSaved: savedJobIds.has(job.id),
     }));
+
+  function handleJobClick(job) {
+    setIsJobModalOpen(true);
+    setSelectedJob(job);
+  }
+
+  function handleCloseJobModal() {
+    setIsJobModalOpen(false);
+    setSelectedJob(null);
+  }
 
   const savedCount = savedJobIds.size;
   // console.log(typeof filteredJobs);
@@ -117,6 +158,10 @@ function App() {
             onExperienceLevelChange={setSelectedExperienceLevels}
             salaryRange={salaryRange}
             onSalaryRangeChange={setSalaryRange}
+            datePosted={datePosted}
+            onDatePostedChange={setDatePosted}
+            isRemoteOnly={isRemoteOnly}
+            onRemoteOnlyChange={setIsRemoteOnly}
           />
           <main className="main">
             <SearchBar
@@ -132,7 +177,11 @@ function App() {
               <span>Search Results</span>
             </div>
 
-            <JobList jobs={filteredJobs} onSaveJob={handleSaveJob} />
+            <JobList
+              jobs={filteredJobs}
+              onSaveJob={handleSaveJob}
+              onJobCick={handleJobClick}
+            />
           </main>
         </div>
       </div>

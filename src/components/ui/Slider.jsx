@@ -5,8 +5,22 @@ function Slider({ value, onChange, min, max, step = 1, className, ...props }) {
   const [isSliding, setIsSliding] = useState(null);
   const trackRef = useRef(null);
 
+  const valueRef = useRef(value);
+  const onChangeRef = useRef(onChange);
+  const minRef = useRef(min);
+  const maxRef = useRef(max);
+  const stepRef = useRef(step);
+
+  useEffect(() => {
+    valueRef.current = value;
+    onChangeRef.current = onChange;
+    minRef.current = min;
+    maxRef.current = max;
+    stepRef.current = step;
+  }, [value, onChange, min, max, step]);
+
   const getPercentage = (val) => {
-    return ((val - min) / (max - min)) * 100;
+    return ((val - minRef.current) / (maxRef.current - minRef.current)) * 100;
   };
 
   const handleMouseDown = (thumbIndex, e) => {
@@ -27,12 +41,25 @@ function Slider({ value, onChange, min, max, step = 1, className, ...props }) {
       );
 
       const newValue =
-        Math.round(((percentage / 100) * (max - min)) / step) * step + min;
+        Math.round(
+          ((percentage / 100) * (maxRef.current - minRef.current)) /
+            stepRef.current
+        ) *
+          stepRef.current +
+        minRef.current;
+
+      const currentValue = valueRef.current;
 
       if (isSliding === 0) {
-        onChange([Math.min(newValue, value[1]), value[1]]);
+        onChangeRef.current([
+          Math.min(newValue, currentValue[1]),
+          currentValue[1],
+        ]);
       } else {
-        onChange([value[0], Math.max(newValue, value[0])]);
+        onChangeRef.current([
+          currentValue[0],
+          Math.max(newValue, currentValue[0]),
+        ]);
       }
     };
 
@@ -47,7 +74,7 @@ function Slider({ value, onChange, min, max, step = 1, className, ...props }) {
       document.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseup", handleMouseUp);
     };
-  }, [isSliding, value, onChange, min, max, step]);
+  }, [isSliding]);
   return (
     <div className={`${styles.sliderContainer} ${className}`} {...props}>
       <div className={styles.track} ref={trackRef}>

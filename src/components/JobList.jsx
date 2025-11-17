@@ -1,7 +1,7 @@
 import JobCard from "./JobCard";
 import styles from "./JobList.module.css";
 
-function JobList({ jobs, onSaveJob }) {
+function JobList({ jobs, onSaveJob, onJobClick }) {
   // console.log(jobs);
 
   // console.log(formatPostedDate(postedDate));
@@ -13,7 +13,12 @@ function JobList({ jobs, onSaveJob }) {
     <div>
       <div className={styles.jobList}>
         {jobs.map((job) => (
-          <JobCard key={job.id} job={job} onSaveJob={onSaveJob} />
+          <JobCard
+            key={job.id}
+            job={job}
+            onSaveJob={onSaveJob}
+            onJobClick={onJobClick}
+          />
         ))}
       </div>
     </div>
