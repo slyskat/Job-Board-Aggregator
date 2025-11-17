@@ -180,7 +180,8 @@ function App() {
             <JobList
               jobs={filteredJobs}
               onSaveJob={handleSaveJob}
-              onJobCick={handleJobClick}
+              onJobClick={handleJobClick}
+              onJobClose={handleCloseJobModal}
             />
           </main>
         </div>
