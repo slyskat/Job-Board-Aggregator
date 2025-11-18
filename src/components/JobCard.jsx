@@ -63,10 +63,12 @@ function JobCard({ job, onSaveJob, onJobClick }) {
           <span>{date}</span>
         </div>
 
-        <div className={styles.infoItem}>
-          <DollarSign className={styles.infoIcon} />
-          <span className={styles.salary}>{salary}</span>
-        </div>
+        {salary && (
+          <div className={styles.infoItem}>
+            <DollarSign className={styles.infoIcon} />
+            <span className={styles.salary}>{salary}</span>
+          </div>
+        )}
       </div>
 
       <div className={styles.jobTags}>

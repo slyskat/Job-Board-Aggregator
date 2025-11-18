@@ -6,13 +6,11 @@ export function formatSalary(minSalary, maxSalary) {
     return (
       value === null ||
       value === undefined ||
+      value === 0 ||
       typeof value !== "number" ||
       Number.isNaN(value)
     );
   };
-
-  // console.log("isInvalid(minSalary:", isInvalid(minSalary));
-  // console.log("isInvalid(maxSalary:", isInvalid(maxSalary));
 
   if (isInvalid(minSalary) && isInvalid(maxSalary)) {
     return null;
