@@ -38,13 +38,6 @@ function App() {
 
   const jobs = normalizeJobData(rawJobsData);
 
-  console.log("Normalized Jobs:", jobs);
-  console.log("First job sample:", jobs[0]);
-
-  // console.log(jobs);
-
-  // const totalJobs = filteredJobs.length;
-
   function handleSaveJob(id) {
     setSavedJobIds((currentList) => {
       const newList = new Set(currentList);
@@ -142,8 +135,24 @@ function App() {
     setSelectedJob(null);
   }
 
+  function handleOpenFilters() {
+    setIsFilterOpen(true);
+  }
+
+  function handleCloseFilters() {
+    setIsFilterOpen(false);
+  }
+
+  function handleClearAllFilters() {
+    setSelectedJobTypes(new Set());
+    setSelectedExperienceLevels(new Set());
+    setSalaryRange({ min: 0, max: 300000 });
+    setDatePosted("");
+    setIsRemoteOnly(false);
+  }
+
   const savedCount = savedJobIds.size;
-  // console.log(typeof filteredJobs);
+
   return (
     <div className="app">
       <Header savedCount={savedCount} />
@@ -162,6 +171,8 @@ function App() {
             onDatePostedChange={setDatePosted}
             isRemoteOnly={isRemoteOnly}
             onRemoteOnlyChange={setIsRemoteOnly}
+            onClose={handleCloseFilters}
+            onClearAll={handleClearAllFilters}
           />
           <main className="main">
             <SearchBar
@@ -169,6 +180,7 @@ function App() {
               setLocationQuery={setLocationQuery}
               setSearchQuery={setSearchQuery}
               locationquery={locationquery}
+              onOpenFilters={handleOpenFilters}
             />
             <JobStats jobs={filteredJobs} />
             <div className="breadcrumb">

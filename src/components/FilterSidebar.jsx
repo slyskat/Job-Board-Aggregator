@@ -18,6 +18,8 @@ function FilterSidebar({
   onRemoteOnlyChange,
   datePosted,
   onDatePostedChange,
+  onClose,
+  onClearAll,
 }) {
   const jobTypes = [
     { id: "full-time", label: "Full-time" },
@@ -63,16 +65,27 @@ function FilterSidebar({
 
   return (
     <>
-      <div className={`${styles.filterModal} ${isOpen ? styles.open : ""}`}>
-        <div className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
+      <div
+        className={`${styles.filterModal} ${isOpen ? styles.open : ""}`}
+        onClick={onClose}
+      >
+        <div
+          className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className={styles.header}>
             <h3 className={styles.title}>Filters</h3>
             <div className={styles.headerButtons}>
-              <Button btnType="secondary" size="small">
+              <Button btnType="secondary" size="small" onClick={onClearAll}>
                 {" "}
                 Clear All
               </Button>
-              <Button btnType="secondary" size="small">
+              <Button
+                btnType="secondary"
+                size="small"
+                onClick={onClose}
+                className={styles.closeButton}
+              >
                 <X className={styles.closeIcon} />
               </Button>
             </div>

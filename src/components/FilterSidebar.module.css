@@ -6,9 +6,12 @@
   backdrop-filter: blur(4px);
   z-index: 40;
   display: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
 }
 
 .filterModal.open {
+  opacity: 1;
   display: block;
 }
 
@@ -26,6 +29,7 @@
   transition: transform 0.3s ease;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  padding-top: 3rem;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -56,11 +60,12 @@
 
 .closeButton {
   display: flex;
+  padding: 0.75rem;
 }
 
 .closeIcon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .content {
@@ -170,6 +175,7 @@
     height: calc(100vh - 2rem);
     transform: translateX(0);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0;
   }
 
   .closeButton {

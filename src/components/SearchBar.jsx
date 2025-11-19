@@ -6,6 +6,7 @@ function SearchBar({
   setSearchQuery,
   locationquery,
   setLocationQuery,
+  onOpenFilters,
 }) {
   return (
     <div className={styles.searchContainer}>
@@ -40,8 +41,8 @@ function SearchBar({
           >
             Clear All
           </button>
-          <button className={styles.filtersButton}>
-            <Filter className={styles.filtersIcon} />
+          <button className={styles.filtersButton} onClick={onOpenFilters}>
+            <Filter className={styles.filtersIcon} onClick />
             <span className={styles.filtersText}>Filters</span>
           </button>
         </div>
