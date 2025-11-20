@@ -29,7 +29,6 @@
   transition: transform 0.3s ease;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-top: 3rem;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -42,6 +41,7 @@
 
 .header {
   padding: 1rem;
+  padding-top: 4rem;
   border-bottom: 1px solid #e5e7eb;
   display: flex;
   align-items: center;
@@ -165,8 +165,8 @@
     background-color: transparent;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    z-index: auto;
     inset: auto;
+    opacity: 1;
   }
 
   .sidebar {
