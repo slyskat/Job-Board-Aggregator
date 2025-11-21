@@ -7,7 +7,8 @@ import { fetchJobs } from "./utils/jobApi";
 import JobList from "./components/JobList";
 import { ChevronRight } from "lucide-react";
 import FilterSidebar from "./components/FilterSidebar";
-import { set } from "date-fns";
+import LoadingSpinner from "./components/LoadingSpinner";
+import ErrorState from "./components/ErrorState";
 
 function App() {
   const [rawJobsData, setRawJobsData] = useState([]);
@@ -26,11 +27,27 @@ function App() {
   const [selectedJob, setSelectedJob] = useState(null);
   const [isJobModalOpen, setIsJobModalOpen] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   useEffect(function () {
     async function loadJobs() {
-      const data = await fetchJobs();
-      console.log("Raw API Response: ", data);
-      setRawJobsData(data);
+      try {
+        setIsLoading(true);
+        setError(null);
+
+        const data = await fetchJobs();
+        setRawJobsData(data);
+
+        if (!data || data.length === 0) {
+          setError("No jobs found. Try adjusting your search criteria.");
+        }
+      } catch (err) {
+        console.error("Failed to fetch jobs:", err);
+        setError("Failed to load jobs. Please try again later.");
+      } finally {
+        setIsLoading(false);
+      }
     }
 
     loadJobs();
@@ -151,6 +168,20 @@ function App() {
     setIsRemoteOnly(false);
   }
 
+  function handleRetry() {
+    setError(null);
+    setIsLoading(true);
+    fetchJobs()
+      .then((data) => {
+        setRawJobsData(data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setError("Failed to load jobs. Please try again later.");
+        setIsLoading(false);
+      });
+  }
+
   const savedCount = savedJobIds.size;
 
   return (
@@ -189,12 +220,17 @@ function App() {
               <span>Search Results</span>
             </div>
 
-            <JobList
-              jobs={filteredJobs}
-              onSaveJob={handleSaveJob}
-              onJobClick={handleJobClick}
-              onJobClose={handleCloseJobModal}
-            />
+            {isLoading ? (
+              <LoadingSpinner />
+            ) : error ? (
+              <ErrorState onRetry={handleRetry} />
+            ) : (
+              <JobList
+                jobs={filteredJobs}
+                onJobClick={handleJobClick}
+                onSaveJob={handleSaveJob}
+              />
+            )}
           </main>
         </div>
       </div>
