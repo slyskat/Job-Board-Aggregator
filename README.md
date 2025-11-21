@@ -2,10 +2,7 @@
 
 A modern, full-featured job search platform that aggregates real-time job listings from the JSearch API. Built with React, featuring advanced multi-criteria filtering, responsive design, and an intuitive user experience.
 
-> 🚀 **[View Live Demo](#)** | 📱 Fully Responsive | ⚡ Real-time Data
-
-<!-- Add your demo GIF or main screenshot here once you have it -->
-<!-- ![Job Board Demo](./images/demo.gif) -->
+> 🚀 **[View Live Demo](https://job-board-aggregator.vercel.app/)** | 📱 Fully Responsive | ⚡ Real-time Data
 
 ## Key Features
 
@@ -273,18 +270,18 @@ After experiencing the frustration of searching across multiple job platforms an
 
 ## 📸 Screenshots
 
-<!-- Add screenshots once you have them
 ### Desktop View
-![Desktop Interface](./images/desktop-view.png)
+
+![Desktop Interface](./public/images/desktop-view.png)
 
 ### Mobile Responsive
-![Mobile View](./images/mobile-view.png)
+
+<img src="./public/images/mobile-view.png" alt="Mobile responsive view" width="375">
 
 ### Advanced Filters
-![Filter Sidebar](./images/filters-sidebar.png)
--->
 
-_Screenshots coming soon! [Deploy the app first to capture production-ready images]_
+![Filter options including job type, experience level, salary range, and date posted](./public/images/filters-sidebar.png)
+-->
 
 ## 🧪 Testing & Quality
 
@@ -299,8 +296,6 @@ _Screenshots coming soon! [Deploy the app first to capture production-ready imag
 
 - Unit tests with Vitest for utility functions
 - Integration tests with React Testing Library for components
-- E2E tests with Playwright for critical user flows
-- Accessibility audit with axe-core
 
 ## 📁 Project Structure
 
@@ -325,6 +320,7 @@ Job-Board-Aggregator/
 │ │ ├── jobApi.js # API integration
 │ │ ├── dataNormalizer.js # Data transformation
 │ │ ├── dateFormatter.js # Date utilities
+    ├── inferExperienceLevel #Infer experience levels based on job title
 │ │ ├── salaryFormatter.js # Salary display logic
 │ │ └── stackFormatter.js # Tech stack handling
 │ ├── App.jsx # Main app component
