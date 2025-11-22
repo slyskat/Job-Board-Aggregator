@@ -7,9 +7,10 @@ export function normalizeJobData(jobsData) {
     title: job.job_title,
     company: job.employer_name,
     location:
-      job.job_city && job.job_state
+      job.job_location ||
+      (job.job_city && job.job_state
         ? `${job.job_city}, ${job.job_state}`
-        : job.job_country || "Location not specified",
+        : job.job_country || "Location not specified"),
     jobType: normalizeJobType(job.job_employment_type),
     experienceLevel: inferExperienceLevel(job.job_title),
     minSalary: job.job_min_salary || 0,
