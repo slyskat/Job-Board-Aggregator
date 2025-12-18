@@ -42,7 +42,7 @@ function SearchBar({
             Clear All
           </button>
           <button className={styles.filtersButton} onClick={onOpenFilters}>
-            <Filter className={styles.filtersIcon} onClick />
+            <Filter className={styles.filtersIcon} />
             <span className={styles.filtersText}>Filters</span>
           </button>
         </div>
