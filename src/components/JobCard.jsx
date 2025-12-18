@@ -5,10 +5,7 @@ import { BookmarkIcon, Clock, DollarSign, MapPin } from "lucide-react";
 import Button from "./ui/Button";
 import styles from "./JobCard.module.css";
 
-function JobCard({ job, onSaveJob, onJobClick }) {
-  // console.log(job);
-  // console.log(job?.id);
-
+function JobCard({ job, onSaveJob, onClick }) {
   const {
     title,
     company,
@@ -21,21 +18,13 @@ function JobCard({ job, onSaveJob, onJobClick }) {
     description,
   } = job;
 
-  // const onAddSaveJob = (isSaved, job) => {
-  //   if (isSaved) {
-  //     setSavedJobs([...savedJobs, job]);
-  //   }
-  // };
-
-  // const onSaveJob = (isSaved) => {};
-
   const salary = formatSalary(minSalary, maxSalary);
   const date = formatPostedDate(postedDate);
   const limit = 5;
   const techStack = limitTechStack(requiredTech, limit);
 
   return (
-    <div className={styles.jobCard} onClick={() => onJobClick(job)}>
+    <div className={styles.jobCard} onClick={onClick}>
       <div className={styles.cardHeader}>
         <div className={styles.companyInfo}>
           <div className={styles.jobInfo}>
@@ -45,7 +34,10 @@ function JobCard({ job, onSaveJob, onJobClick }) {
         </div>
 
         <Button
-          onClick={() => onSaveJob(job.id)}
+          onClick={(e) => {
+            e.stopPropagation();
+            onSaveJob(job.id);
+          }}
           className={`${styles.saveButton} ${job.isSaved ? styles.saved : ""}`}
         >
           <BookmarkIcon className={styles.bookmarkIcon} />
