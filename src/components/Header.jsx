@@ -2,7 +2,7 @@ import { BookmarkIcon, Search, MenuIcon } from "lucide-react";
 import Button from "./ui/Button";
 import styles from "./Header.module.css";
 
-function Header({ savedCount }) {
+function Header({ savedCount, onOpenSaved }) {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -18,7 +18,7 @@ function Header({ savedCount }) {
         </div>
 
         <div className={styles.rightHeader}>
-          <Button className={styles.savedButton}>
+          <Button className={styles.savedButton} onClick={onOpenSaved}>
             <BookmarkIcon className={styles.icon} />
             {savedCount > 0 && (
               <span className={styles.savedCount}>{savedCount}</span>
