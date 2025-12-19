@@ -10,15 +10,18 @@ import FilterSidebar from "./components/FilterSidebar";
 import LoadingSpinner from "./components/LoadingSpinner";
 import ErrorState from "./components/ErrorState";
 import JobDetailsModal from "./components/JobDetailsModal";
+import { useLocalStorageState } from "./hooks/UseLocalStorageState";
+import SavedJobsModal from "./components/SavedJobsModal";
 
 function App() {
   const [rawJobsData, setRawJobsData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [savedJobIds, setSavedJobIds] = useState(new Set());
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
   const [isJobModalOpen, setIsJobModalOpen] = useState(false);
+  const [savedJobIds, setSavedJobIds] = useLocalStorageState("savedJobs", []);
+  const [isSavedJobsModalOpen, setIsSavedJobsModalOpen] = useState(false);
 
   const [searchQuery, setSearchQuery] = useState("");
   const [locationquery, setLocationQuery] = useState("");
@@ -56,17 +59,12 @@ function App() {
   const jobs = normalizeJobData(rawJobsData);
 
   function handleSaveJob(id) {
-    setSavedJobIds((currentList) => {
-      const newList = new Set(currentList);
-
-      if (newList.has(id)) {
-        newList.delete(id);
-      } else {
-        newList.add(id);
-      }
-
-      return newList;
-    });
+    if (savedJobIds.includes(id)) {
+      const updatedSavedJobs = savedJobIds.filter((jobId) => jobId !== id);
+      setSavedJobIds(updatedSavedJobs);
+    } else {
+      setSavedJobIds([...savedJobIds, id]);
+    }
   }
 
   const filteredJobs = useMemo(() => {
@@ -140,7 +138,7 @@ function App() {
       })
       .map((job) => ({
         ...job,
-        isSaved: savedJobIds.has(job.id),
+        isSaved: savedJobIds.includes(job.id),
       }));
   }, [
     jobs,
@@ -189,16 +187,27 @@ function App() {
         setIsLoading(false);
       })
       .catch((err) => {
-        setError("Failed to load jobs. Please try again later.");
+        setError("Failed to load jobs. Please try again later.", err);
         setIsLoading(false);
       });
   }
 
-  const savedCount = savedJobIds.size;
+  function handleCloseSavedJobsModal() {
+    setIsSavedJobsModalOpen(false);
+  }
+
+  // function handleOpenSavedJobsModal() {
+  //   setIsSavedJobsModalOpen(true);
+  // }
+
+  const savedCount = savedJobIds.length;
 
   return (
     <div className="app">
-      <Header savedCount={savedCount} />
+      <Header
+        savedCount={savedCount}
+        onOpenSaved={() => setIsSavedJobsModalOpen(true)}
+      />
       <div className="container">
         <div className="layout">
           <FilterSidebar
@@ -248,6 +257,13 @@ function App() {
               isOpen={isJobModalOpen}
               onClose={handleCloseJobModal}
               job={selectedJob}
+            />
+
+            <SavedJobsModal
+              isOpen={isSavedJobsModalOpen}
+              onClose={handleCloseSavedJobsModal}
+              savedJobsIds={savedJobIds}
+              jobs={jobs}
             />
           </main>
         </div>
