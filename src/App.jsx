@@ -138,7 +138,7 @@ function App() {
       })
       .map((job) => ({
         ...job,
-        isSaved: savedJobIds.includes(job.id),
+        isSaved: (savedJobIds || []).includes(job.id),
       }));
   }, [
     jobs,
@@ -200,7 +200,7 @@ function App() {
   //   setIsSavedJobsModalOpen(true);
   // }
 
-  const savedCount = savedJobIds.length;
+  const savedCount = savedJobIds?.length || 0;
 
   return (
     <div className="app">

@@ -4,12 +4,14 @@ export function useLocalStorageState(key, initialState) {
   const [value, setValue] = useState(function () {
     const storedValue = localStorage.getItem(key);
 
-    if (storedValue === " null" || storedValue === undefined) {
+    if (storedValue === null || storedValue === undefined) {
       return initialState;
     }
 
     try {
-      return JSON.parse(storedValue);
+      return JSON.parse(storedValue) !== null
+        ? JSON.parse(storedValue)
+        : initialState;
     } catch (error) {
       console.error("Error parsing local storage state:", error);
       return initialState;

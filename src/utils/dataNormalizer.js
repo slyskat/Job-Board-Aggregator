@@ -4,7 +4,7 @@ import normalizeJobType from "./jobtypeNormalizer";
 export function normalizeJobData(jobsData) {
   return jobsData.map((job) => ({
     id: job.job_id,
-    title: job.job_title,
+    title: job.job_title || "Untitled Position",
     company: job.employer_name,
     location:
       job.job_location ||

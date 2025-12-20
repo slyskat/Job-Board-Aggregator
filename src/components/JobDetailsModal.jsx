@@ -4,8 +4,6 @@ import Button from "./ui/Button";
 import { Building, Clock, MapPin, X } from "lucide-react";
 import { useEffect } from "react";
 function JobDetailsModal({ isOpen, onClose, job }) {
-  console.log(job);
-
   useEffect(
     function () {
       if (isOpen) {
